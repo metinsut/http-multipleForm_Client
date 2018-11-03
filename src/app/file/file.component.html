@@ -1,0 +1,10 @@
+<article>
+   <br>
+   <input type="file" (change)="fileChange($event)" multiple>
+   <button (click)="sendFile()">SEND</button>
+   <br>
+   <br>
+   <div>
+      <img *ngFor="let image of preImage" src="{{image}}" alt="" style="width: 100px; height: 100px;">
+   </div>
+</article>
